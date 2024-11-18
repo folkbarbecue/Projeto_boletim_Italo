@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel do Usuário</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Estilo geral */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #000;
+  }
+
+  /* Menu lateral */
+  .menu-lateral {
+    width: 200px;
+    background-color: #4B0082;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .menu-lateral a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-lateral a:hover {
+    background-color: #9B30FF;
+  }
+
+  /* Estilo para o conteúdo principal */
+  section#turmas {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  a.card-turma {
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  a.card-turma:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f0f0f0;
+  }
+
+  .card-turma p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .menu-lateral {
+      width: 100%;
+      height: auto;
+      position: static;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    section#turmas {
+      margin-left: 0;
+      padding: 10px;
+    }
+
+    a.card-turma {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Painel do Menu Lateral -->
+<div class="menu-lateral">
+  <a href="painel_boletim.html">Boletim</a>
+  <a href="inserir_noa.php">Inserir NOA</a>
+</div>
+
+<section id="turmas">
+  <a href="inserir_notas1A.php" class="card-turma">
+    <p>Inserir Notas<br>1° A</p>
+  </a>
+  <a href="disciplinas.html" class="card-turma">
+    <p>Inserir Notas<br>1° B</p>
+  </a>
+  <a href="inserir_notas2A.php" class="card-turma">
+    <p>Inserir Notas<br>2° A</p>
+  </a>
+  <a href="inserir_nota_3A.php" class="card-turma">
+    <p>Inserir Notas<br>3° A</p>
+  </a>
+  <a href="inserir_nota_3B.php" class="card-turma">
+    <p>Inserir Notas<br>3° B</p>
+  </a>
+</section>
+
+</body>
+</html>

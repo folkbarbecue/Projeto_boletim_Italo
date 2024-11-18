@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 50px;
+    height: 100vh;
+    background: linear-gradient(to right, #9B30FF, #4B0082), linear-gradient(to right, #FF69B4, #8A2BE2);
+    background-blend-mode: overlay;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text p {
+    margin: 5px 0;
+}
+
+.date {
+    text-align: right;
+}
+
+.date p {
+    margin: 5px 0;
+}
+
+.student-info {
+    margin: 20px 0;
+}
+
+.student-info p {
+    margin: 5px 0;
+}
+
+.student-info span {
+    font-weight: bold;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th, tbody td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+
+/* Estilo do painel do menu lateral */
+.menu-lateral {
+    background-color: #f0f0f0; /* cor de fundo do menu */
+    width: 60px; /* largura do menu */
+    height: 100vh; /* altura total da tela */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    position: fixed; /* fixo na tela */
+    left: 0; /* alinhado à esquerda */
+    top: 0; /* alinhado ao topo */
+    overflow-y: auto; /* barra de rolagem se necessário */
+}
+
+/* Estilo dos itens do menu */
+.item-menu {
+    padding: 15px 20px; /* espaçamento interno */
+    border-bottom: 1px solid #ddd; /* linha divisória */
+    color: #333; /* cor do texto */
+    font-family: 'Arial', sans-serif; /* tipo de fonte */
+    font-size: 16px; /* tamanho da fonte */
+    text-decoration: none; /* sem sublinhado */
+    display: block; /* ocupa a largura toda */
+    transition: background-color 0.3s; /* transição suave de cores */
+    margin-left: -12px;
+}
+
+.item-menu:hover {
+    background-color: #e9e9e9; /* cor de fundo ao passar o mouse */
+}
+
+/* Estilo do item ativo */
+.item-menu.ativo {
+    background-color: #ddd; /* cor de fundo do item ativo */
+    color: purple; /* cor do texto do item ativo */
+}
+
+#turmas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens sejam alinhados em múltiplas linhas */
+    justify-content: flex-start; /* Alinha os itens ao início do container */
+    padding: 20px;
+}
+
+.card-turma {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 35px;
+    width: calc(50% - 20px); /* Ajusta a largura para caber dois elementos por linha */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    position: relative;
+}
